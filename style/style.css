@@ -2,6 +2,26 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: 'Roboto', sans-serif; 
+    background-color: #1F2937;
+    color: #f1f0e9;
+}
+
+.headerOg {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.navlist {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    padding: 10px;
+}
+
+.navlist li {
+    margin: 0 10px;
 }
 
 .heroimg, .gallery-image {
