@@ -9,7 +9,7 @@
 <body>
     <!-- header -->
     <header class="headerOg">
-        <h1>Callme Joejo</h1>
+        <h1><a href="#">Callme Joejo</a></h1>
         <nav>
             <ul class="navlist">
                 <li><a href="#">Home</a></li>
@@ -22,23 +22,37 @@
     <!-- main content -->
     <main>
         <section class="hero">
-            <h2 class="headstuff">Look at this SICK looking site</h2>
-            <p class="stuff">This is a simple homepage created using HTML, and CSS. Feel  free to explore and learn more about web development!, and tyr to mess around, ts is fun tbh....no ai btw</p>
-            <p class="button"><a href="#">Contact</a></p>
-            <img src="assets/pfp.jpg" alt="fuhhh" class="heroimg">
+            <div class="heroText">
+                <h2 class="headstuff">Look at this SICK looking site</h2>
+                <p class="stuff">This is a simple homepage created using HTML, and CSS. Feel  free to explore and learn more about web development!, and tyr to mess around, ts is fun tbh....no ai btw</p>
+                <p class="button"><a href="#">Contact</a></p>
+            </div>
+            <div class="heroimg-container">
+                <img src="assets/pfp.jpg" alt="fuhhh" class="heroimg">
+            </div>
         </section>
 
         <section class="gallery">
-            <h2>Pics of Saber (aish)</h2>
+            <div class="galleryheader">
+                <h2>Pics of Saber (aish).</h2>
+            </div>
             <div class="gallery-container">
-                <img src="assets/saber1.jpg" alt="Saber 1" class="gallery-image">
-                <p class="gallery-caption">artoria plushie</p>
-                <img src="assets/saber2.jpg" alt="Saber 2" class="gallery-image">
-                <p class="gallery-caption">artoria fanart</p>
-                <img src="assets/saber3.jpg" alt="Saber 3" class="gallery-image">
-                <p class="gallery-caption">also saber (Richard Lionheart)</p>
-                <img src="assets/saber4.jpg" alt="Saber 4" class="gallery-image">
-                <p class="gallery-caption">Richard again</p>
+                <div class="gallery-item">
+                    <img src="assets/saber1.jpg" alt="Saber 1" class="gallery-image">
+                    <p class="gallery-caption">artoria plushie</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/saber2.jpg" alt="Saber 2" class="gallery-image">
+                    <p class="gallery-caption">artoria fanart</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/saber3.jpg" alt="Saber 3" class="gallery-image">
+                    <p class="gallery-caption">also saber (Richard Lionheart)</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/saber4.jpg" alt="Saber 4" class="gallery-image">
+                    <p class="gallery-caption">Richard again</p>
+                </div>
             </div>
         </section>
 
@@ -50,24 +64,14 @@
         </section>
 
         <section class="contact">
-            <h2>Contact Me</h2>
-            <p>If you have any questions or just want to say hi, feel free to reach out!</p>
-            <form id="contact-form">
-
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" required></textarea>
-
-                <button type="submit">Send</button>
-            </form>
-            <p>Or catch me on Discord</p>
-            <button id="discord-button">Join my Discord</button>
-            <!-- <p><a href="https://discord.gg/yourinvite" target="_blank">Discord</a></p> -->
+            <div class="contactContainer">
+                <div class="text-content">
+                    <h2>Contact Me</h2>
+                    <p>If you have any questions or just want to say hi, feel free to reach out!</p>
+                    <p>Or catch me on Discord</p>
+                </div>              
+                <a href="https://discord.gg/yourinvite" target="_blank" class="discord-button">Join my Discord</a>
+            </div>
         </section>
 
         <section class="footer">

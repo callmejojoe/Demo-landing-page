@@ -1,16 +1,39 @@
+:root {
+    --primary-color: #1F2937;
+    --accent-color: #3B82F6;
+    --secondary-color2: #cfcec5;
+    --secondary-color: #f1f0e9;
+    --font-family: 'Roboto', sans-serif;
+    --heroMainTextSize: 2.5rem;
+    --heroMainTextWeight: 900;
+    --herosecTextSize: 1.1rem;
+    --herosecTextWeight: 300;
+    --headerTextSize: 1.5rem;
+    --headerTextWeight: 900;
+    --quoteTextSize: 1.2rem;
+    --quoteTextWeight: 300;
+    --Textcolor1: #f3f3ec;
+    --Textcolor2: #ebebe5;
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'Roboto', sans-serif; 
-    background-color: #1F2937;
-    color: #f1f0e9;
+    font-family: var(--font-family);
 }
 
 .headerOg {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    background-color: var(--primary-color);
+    padding: 20px 60px 20px 60px;
+}
+
+.navlist a, .headerOg h1 a {
+    text-decoration: none;
+    color: var(--secondary-color);
 }
 
 .navlist {
@@ -24,7 +47,157 @@
     margin: 0 10px;
 }
 
-.heroimg, .gallery-image {
-    width: 10rem;
-    height: auto;
+.hero {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    background-color: var(--primary-color);
+}
+
+.heroText {
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+    padding: 20px;
+}
+
+.headstuff {
+    font-size: var(--heroMainTextSize);
+    font-weight: var(--heroMainTextWeight);
+    color: var(--Textcolor1);
+}
+
+.stuff {
+    font-size: var(--herosecTextSize);
+    font-weight: var(--herosecTextWeight);
+    color: var(--Textcolor2);
+    margin: 20px 0;
+}
+
+.button a {
+    display: inline-block;
+    padding: 10px 40px;
+    background-color: var(--accent-color);
+    color: var(--Textcolor1);
+    text-decoration: none;
+    border-radius: 13px;
+    transition: background-color 0.3s ease;
+}   
+.heroimg {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    border: var(--secondary-color) solid 5px;
+}
+
+.gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--secondary-color);
+}
+
+.gallery h2 {
+    font-size: var(--headerTextSize);
+    font-weight: var(--headerTextWeight);
+    color: var(--primary-color);
+    margin: 60px 0 20px 0;
+}
+
+.gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    padding-bottom: 60px;
+}
+
+.gallery-image {
+    width: 180px;
+    height: 180px;
+    border: var(--accent-color) solid 5px;
+    border-radius: 18px;
+}
+
+.gallery-caption {
+    width: 180px;
+    font-size: var(--quoteTextSize);
+    font-weight: var(--quoteTextWeight);
+    color: var(--primary-color);
+    text-align: center;
+    margin-top: 5px;
+}
+
+.quote {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--secondary-color2);
+    padding: 50px 20px 50px 20px;
+}
+
+blockquote p {
+    font-size: var(--quoteTextSize);
+    font-weight: var(--quoteTextWeight);
+    color: var(--primary-color);
+    max-width: 600px;
+    text-align: left;
+    margin-bottom: 5px;
+    padding-top: 60px;
+}
+
+blockquote footer {
+    font-size: var(--herosecTextSize);
+    font-weight: var(--headerTextWeight);
+    color: var(--primary-color);
+    text-align: right;
+    width: 100%;
+    padding-bottom: 60px;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--secondary-color);
+    padding: 50px 20px 50px 20px;
+}
+
+.contactContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 60px;
+    background-color: var(--accent-color);
+    border-radius: 15px;
+    padding: 20px 80px;
+    color: var(--Textcolor1);
+}
+
+.contact .text-content {
+    font-size: var(--herosecTextSize);
+    font-weight: 400;
+}
+
+.contact .discord-button {
+    padding: 10px 40px;
+    background-color: var(--accent-color);
+    text-decoration: none;
+    color: var(--Textcolor1);
+    font-weight: 600;
+    border-radius: 13px;
+    border: var(--Textcolor1) solid 3px;
+    transition: background-color 0.3s ease;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--primary-color);
+    padding: 20px 0;
+    color: var(--secondary-color);
 }
